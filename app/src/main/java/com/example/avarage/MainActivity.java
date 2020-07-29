@@ -28,20 +28,24 @@ public class MainActivity extends AppCompatActivity {
         double sr, suma = 0;
         List<Character> tab = new ArrayList<>();
         str = number.getText().toString().trim();
-        do {
-            tab.add(str.charAt(i));
-            i++;
-        } while (tab.get(i - 1) != '0');
-        for (; j < i; j++) {
-            String a = Character.toString(tab.get(j));
-            x = Integer.parseInt(a);
-            suma += x;
+        try {
+            for (; i > -1; ) {
+                tab.add(str.charAt(i));
+                i++;
+            }
+        } catch (Exception e) { }
+        finally {
+            for (; j < i; j++) {
+                String a = Character.toString(tab.get(j));
+                x = Integer.parseInt(a);
+                suma += x;
+            }
+            sr = suma / j;
+            sr *= 100;
+            sr = Math.round(sr);
+            sr /= 100;
+            String ss = Double.toString(sr);
+            avarage.setText(ss);
         }
-        sr = suma / (j - 1);
-        sr *= 100;
-        sr = Math.round(sr);
-        sr /= 100;
-        String ss = Double.toString(sr);
-        avarage.setText(ss);
     }
 }
