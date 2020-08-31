@@ -4,15 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     EditText number;
-    EditText avarage;
+    TextView avarage;
     String str;
 
     @Override
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         number = (EditText) findViewById(R.id.number);
-        avarage = (EditText) findViewById(R.id.avarage);
+        avarage = (TextView) findViewById(R.id.avarage);
     }
 
     public void click(View view) {

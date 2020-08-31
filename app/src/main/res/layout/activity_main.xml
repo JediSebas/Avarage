@@ -8,42 +8,45 @@
 
     <EditText
         android:id="@+id/number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="93dp"
-        android:layout_marginEnd="94dp"
+        android:layout_width="307dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="52dp"
+        android:autofillHints="@string/wprowadz"
+        android:hint="@string/wprowadz"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/oblicz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginBottom="146dp"
+        android:layout_width="402dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="5dp"
         android:onClick="click"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/avarage"
+        android:text="@string/oblicz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number" />
 
-    <EditText
+    <TextView
         android:id="@+id/avarage"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="151dp"
-        android:ems="10"
-        android:inputType="number"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="197dp"
+        android:text="@string/wynik"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oblicz" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
