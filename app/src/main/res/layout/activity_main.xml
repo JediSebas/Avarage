@@ -8,14 +8,14 @@
 
     <EditText
         android:id="@+id/number"
-        android:layout_width="307dp"
+        android:layout_width="0dp"
         android:layout_height="53dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="52dp"
         android:autofillHints="@string/wprowadz"
-        android:hint="@string/wprowadz"
         android:ems="10"
+        android:hint="@string/wprowadz"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/oblicz"
-        android:layout_width="402dp"
+        android:layout_width="0dp"
         android:layout_height="67dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="88dp"
@@ -37,16 +37,30 @@
 
     <TextView
         android:id="@+id/avarage"
-        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
         android:layout_marginEnd="170dp"
         android:layout_marginBottom="197dp"
         android:text="@string/wynik"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/oblicz" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
